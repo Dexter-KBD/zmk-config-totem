@@ -503,7 +503,7 @@
             bindings = <
                           &kp Q  &kp W         &over_E_ctl    &over_R_f4   &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
                           &kp A  &over_S_save  &over_D_ctl    &over_F_ctl  &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp B
-&MT_hold RIGHT_SHIFT TAB  &kp Z  &kp X         &kp C          &kp V        &kp B               &kp N            &kp M         &kp COMMA      &kp PERIOD     &kp SLASH  &OSM_shift RIGHT_SHIFT
+&MT_hold RIGHT_SHIFT TAB  &kp Z  &kp X         &kp C          &kp V        &kp B               &kp N            &kp M         &kp COMMA      &kp PERIOD     &lt 7 SLASH  &OSM_shift RIGHT_SHIFT
                                                &lt 5 LG(TAB)  &lt 6 SPACE  &LT_hold 4 ENTER    &lt 5 BACKSPACE  &kp SPACE     &kp LS(SPACE)
             >;
         };
@@ -513,7 +513,7 @@
               &kp TAB    &kp Q  &kp W     &kp E      &kp R          &kp Y     &kp U           &kp UP_ARROW    &kp O            &kp P
               &kp LSHFT  &kp A  &kp S     &kp D      &kp F          &kp H     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMI
 &lt 0 ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C      &kp V          &kp N     &kp M           &kp COMMA       &kp DOT          &kp FSLH  &kp ENTER
-                                &kp LALT  &kp SPACE  &lt 7 ENTER    &kp BSPC  &lt 0 SPACE     &kp LS(SPACE)
+                                &kp LALT  &kp SPACE  &lt 8 ENTER    &kp BSPC  &lt 0 SPACE     &kp LS(SPACE)
             >;
 
             label = "ISAAC'-'";
@@ -533,7 +533,7 @@
            &kp Q  &kp W  &kp F      &kp P        &kp B          &kp J            &kp L      &kp U          &kp Y    &kp SEMI
            &kp A  &kp R  &kp S      &kp T        &kp G          &kp M            &kp N      &kp E          &kp I    &kp O
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp D        &kp V          &kp K            &kp H      &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                         &lt 7 TAB  &lt 0 SPACE  &lt 4 ENTER    &lt 6 BACKSPACE  &kp SPACE  &kp LS(SPACE)
+                         &lt 8 TAB  &lt 0 SPACE  &lt 4 ENTER    &lt 6 BACKSPACE  &kp SPACE  &kp LS(SPACE)
             >;
 
             label = "Colemak";
@@ -566,6 +566,15 @@
                     &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))      &kp LA(LC(F))     &td_mail           &kp LA(LC(H))          &kp LA(LC(J))  &kp LA(LC(K))  &kp LA(LC(L))  &trans
 &kp LC(LS(ESCAPE))  &kp Z             &kp LA(LC(X))     &kp LA(LC(C))      &kp LA(LC(V))     &kp LA(LC(B))      &kp LA(LC(SEMICOLON))  &trans         &trans         &trans         &kp C_SLEEP  &kp C_SLEEP_MODE
                                                         &kp C_VOLUME_DOWN  &trans            &kp C_VOLUME_UP    &kp C_AL_CALCULATOR    &kp LG(A)      &kp LG(N)
+            >;
+        };
+
+        Dongle {
+            bindings = <
+         &trans  &trans  &trans   &trans  &trans     &trans  &trans  &trans  &trans  &trans
+         &trans  &trans  &trans   &trans  &trans     &trans  &trans  &trans  &trans  &trans
+&kp F22  &trans  &trans  &trans   &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp F23  &trans  &kp F24    &trans  &trans  &trans
             >;
         };
 
