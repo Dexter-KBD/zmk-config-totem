@@ -499,7 +499,7 @@
         compatible = "zmk,keymap";
 
         Totem {
-            display-name = "Totem";
+            display-name = "To^^토템♬";
             bindings = <
                           &kp Q  &kp W         &over_E_ctl    &over_R_f4   &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
                           &kp A  &over_S_save  &over_D_ctl    &over_F_ctl  &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp B
@@ -571,11 +571,13 @@
 
         Dongle {
             bindings = <
-         &trans  &trans  &trans   &trans  &trans     &trans  &trans  &trans  &trans  &trans
-         &trans  &trans  &trans   &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&kp F22  &trans  &trans  &trans   &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp F23  &trans  &kp F24    &trans  &trans  &trans
+         &trans  &trans  &trans   &trans  &trans     &trans     &kp LC(LG(LEFT))  &trans          &kp LG(LC(RIGHT))  &trans
+         &trans  &trans  &trans   &trans  &trans     &mkp MB5   &mkp MB4          &mmv MOVE_UP    &trans             &trans
+&kp F22  &trans  &trans  &trans   &trans  &trans     &trans     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans  &trans
+                         &kp F23  &trans  &kp F24    &mkp LCLK  &mkp MCLK         &mkp RCLK
             >;
+
+            label = "Mouse";
         };
 
         Gameadd {
