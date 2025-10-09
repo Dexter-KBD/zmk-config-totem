@@ -569,11 +569,11 @@
             >;
         };
 
-        Dongle {
+        Mouse {
             bindings = <
          &trans  &trans  &trans   &trans  &trans     &trans     &kp LC(LG(LEFT))  &trans          &kp LG(LC(RIGHT))  &trans
-         &trans  &trans  &trans   &trans  &trans     &mkp MB5   &mkp MB4          &mmv MOVE_UP    &trans             &trans
-&kp F22  &trans  &trans  &trans   &trans  &trans     &trans     &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans  &trans
+         &trans  &trans  &trans   &trans  &trans     &mkp MB5   &mmv MOVE_Y(100)  &mmv MOVE_UP    &mmv MOVE_Y(-100)  &trans
+&kp F22  &trans  &trans  &trans   &trans  &trans     &mkp MB4   &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans  &trans
                          &kp F23  &trans  &kp F24    &mkp LCLK  &mkp MCLK         &mkp RCLK
             >;
 
