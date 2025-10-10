@@ -10,7 +10,7 @@ manifest:
       revision: 0.3.0 # or main if newer than 0.3.0
       import: app/west.yml
     - name: zmk-dongle-screen
-      remote: Dexter-KBD
+      remote: dexterkbd
       revision: main
   self:
     path: config
