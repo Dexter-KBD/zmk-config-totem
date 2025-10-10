@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: janpfischer
-      url-base: https://github.com/janpfischer
+    - name: dexterkbd
+      url-base: https://github.com/Dexter-KBD
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: 0.3.0 # or main if newer than 0.3.0
       import: app/west.yml
     - name: zmk-dongle-screen
-      remote: janpfischer
-      revision: 0.1.2
+      remote: dexterkbd
+      revision: main
   self:
     path: config
