@@ -10,7 +10,6 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,display = &epd;
         zmk,physical-layout = &default_layout;
     };
 
