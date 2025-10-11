@@ -577,7 +577,7 @@
                          &kp F23  &trans  &kp F24    &mkp LCLK  &mkp MCLK         &mkp RCLK
             >;
 
-            label = "한Eng^^";
+            label = "한Eng^^7";
         };
 
         Gameadd {
