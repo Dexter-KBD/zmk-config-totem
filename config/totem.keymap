@@ -560,7 +560,7 @@
         };
 
         Shortcut {
-            display-name = "Short";
+            display-name = "Shortcut";
             bindings = <
                     &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)   &kp LG(NUMBER_4)  &kp LG(N5)         &kp LG(NUMBER_6)       &kp LG(N7)     &kp LG(N8)     &kp LG(N9)     &kp LG(N0)
                     &kp LA(LC(A))     &kp LA(LC(S))     &kp LA(LC(D))      &kp LA(LC(F))     &td_mail           &kp LA(LC(H))          &kp LA(LC(J))  &kp LA(LC(K))  &kp LA(LC(L))  &trans
