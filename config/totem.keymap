@@ -499,7 +499,7 @@
         compatible = "zmk,keymap";
 
         Totem {
-            display-name = "Totem";
+            display-name = "토템";
             bindings = <
                           &kp Q  &kp W         &over_E_ctl    &over_R_f4   &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
                           &kp A  &over_S_save  &over_D_ctl    &over_F_ctl  &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp B
