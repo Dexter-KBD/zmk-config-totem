@@ -503,8 +503,8 @@
             bindings = <
                               &kp Q  &kp W         &over_E_ctl  &over_R_f4   &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
                               &kp A  &over_S_save  &over_D_ctl  &over_F_ctl  &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp B
-&MT_hold RIGHT_SHIFT LG(TAB)  &kp Z  &kp X         &kp C        &kp V        &kp B               &kp N            &kp M         &kp COMMA      &kp PERIOD     &lt 7 SLASH  &kp RIGHT_SHIFT
-                                                   &lt 5 TAB    &lt 6 SPACE  &LT_hold 4 ENTER    &lt 5 BACKSPACE  &kp SPACE     &kp LS(SPACE)
+&MT_hold RIGHT_SHIFT LG(TAB)  &kp Z  &kp X         &kp C        &kp V        &kp B               &kp N            &kp M         &kp COMMA      &kp PERIOD     &lt 8 SLASH  &kp RIGHT_SHIFT
+                                                   &lt 5 TAB    &lt 7 SPACE  &LT_hold 4 ENTER    &lt 6 BACKSPACE  &kp SPACE     &kp LS(SPACE)
             >;
         };
 
@@ -513,7 +513,7 @@
               &kp TAB    &kp Q  &kp W     &kp E      &kp R          &kp Y     &kp U           &kp UP_ARROW    &kp O            &kp P
               &kp LSHFT  &kp A  &kp S     &kp D      &kp F          &kp H     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMI
 &lt 0 ESCAPE  &kp LCTRL  &kp Z  &kp X     &kp C      &kp V          &kp N     &kp M           &kp COMMA       &kp DOT          &kp FSLH  &kp ENTER
-                                &kp LALT  &kp SPACE  &lt 8 ENTER    &kp BSPC  &lt 0 SPACE     &kp LS(SPACE)
+                                &kp LALT  &kp SPACE  &lt 9 ENTER    &kp BSPC  &lt 0 SPACE     &kp LS(SPACE)
             >;
 
             label = "ISAAC'-'";
@@ -533,7 +533,7 @@
            &kp Q  &kp W  &kp F      &kp P        &kp B          &kp J            &kp L      &kp U          &kp Y    &kp SEMI
            &kp A  &kp R  &kp S      &kp T        &kp G          &kp M            &kp N      &kp E          &kp I    &kp O
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp D        &kp V          &kp K            &kp H      &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                         &lt 8 TAB  &lt 0 SPACE  &lt 4 ENTER    &lt 6 BACKSPACE  &kp SPACE  &kp LS(SPACE)
+                         &lt 9 TAB  &lt 0 SPACE  &lt 4 ENTER    &lt 7 BACKSPACE  &kp SPACE  &kp LS(SPACE)
             >;
 
             label = "Colemak";
@@ -542,7 +542,7 @@
         Numpad {
             display-name = "Numpad";
             bindings = <
-           &kp I      &kp LC(W)       &kp UP_ARROW    &ht_refresh 0 LC(R)  &hm LS(LC(T)) LC(T)    &kp N7         &kp N8        &kp N9        &kp MINUS  &kp UNDERSCORE
+           &kp LC(L)  &kp LC(W)       &kp UP_ARROW    &ht_refresh 0 LC(R)  &hm LS(LC(T)) LC(T)    &kp N7         &kp N8        &kp N9        &kp MINUS  &kp UNDERSCORE
            &kp LC(A)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LC(G)              &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp PLUS   &kp COLON
 &kp LC(Y)  &kp LC(Z)  &kp LC(X)       &kp LC(C)       &kp LC(V)            &kp C_AC_HOME          &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp SLASH       &kp EQUAL
                                       &Mecro_Log      &td_Macro_Net        &trans                 &kp BACKSPACE  &kp N0        &kp PERIOD
@@ -552,10 +552,20 @@
         Function {
             display-name = "Function";
             bindings = <
-                 &kp F1  &kp F2   &kp F3   &kp F4             &kp LBKT                &kp RBKT               &kp C_VOLUME_DOWN  &kp UP_ARROW     &kp C_VOLUME_UP    &kp PAGE_UP
-                 &kp F5  &kp F6   &kp F7   &kp F8             &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp LEFT_ARROW     &kp DOWN_ARROW   &kp RIGHT_ARROW    &kp PAGE_DOWN
-&kp LC(LS(ESC))  &kp F9  &kp F10  &kp F11  &kp F12            &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp LC(LG(LEFT))   &kp LG(D)        &kp LC(LG(RIGHT))  &kp QUESTION   &kp SQT
-                                  &trans   &kp LS(LA(LC(F)))  &kp LS(LA(LC(A)))       &trans                 &kp LEFT_ARROW     &kp RIGHT_ARROW
+                 &kp F1  &kp F2   &kp F3   &kp F4             &none                &none  &none  &none  &none  &none
+                 &kp F5  &kp F6   &kp F7   &kp F8             &none                &none  &none  &none  &none  &none
+&kp LC(LS(ESC))  &kp F9  &kp F10  &kp F11  &kp F12            &none                &none  &none  &none  &none  &none  &none
+                                  &none    &kp LS(LA(LC(F)))  &kp LS(LA(LC(A)))    &none  &none  &none
+            >;
+        };
+
+        Media {
+            display-name = "Media";
+            bindings = <
+       &kp EXCLAMATION  &none  &none   &none  &kp LEFT_BRACKET    &kp RBKT          &kp C_VOLUME_DOWN  &kp UP_ARROW     &kp C_VOLUME_UP    &kp QUESTION
+       &none            &none  &none   &none  &kp LEFT_BRACE      &kp RIGHT_BRACE   &kp LEFT_ARROW     &kp DOWN_ARROW   &kp RIGHT_ARROW    &kp PAGE_DOWN
+&none  &none            &none  &none   &none  &kp LESS_THAN       &kp GREATER_THAN  &kp LC(LG(LEFT))   &kp LG(D)        &kp LC(LG(RIGHT))  &kp QUESTION   &kp SQT
+                               &trans  &none  &none               &trans            &kp LEFT_ARROW     &kp RIGHT_ARROW
             >;
         };
 
