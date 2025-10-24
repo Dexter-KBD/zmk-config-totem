@@ -552,10 +552,10 @@
         Function {
             display-name = "Function";
             bindings = <
-                 &kp F1  &kp F2   &kp F3   &kp F4             &none                &none  &none  &none  &none  &none
-                 &kp F5  &kp F6   &kp F7   &kp F8             &none                &none  &none  &none  &none  &none
-&kp LC(LS(ESC))  &kp F9  &kp F10  &kp F11  &kp F12            &none                &none  &none  &none  &none  &none  &none
-                                  &none    &kp LS(LA(LC(F)))  &kp LS(LA(LC(A)))    &none  &none  &none
+                        &kp F1  &kp F2   &kp F3   &kp F4             &kp LC(LG(RIGHT))    &none  &none  &none  &none  &none
+                        &kp F5  &kp F6   &kp F7   &kp F8             &none                &none  &none  &none  &none  &none
+&kp LC(LG(LEFT_ARROW))  &kp F9  &kp F10  &kp F11  &kp F12            &none                &none  &none  &none  &none  &none  &none
+                                         &none    &kp LS(LA(LC(F)))  &kp LS(LA(LC(A)))    &none  &none  &none
             >;
         };
 
