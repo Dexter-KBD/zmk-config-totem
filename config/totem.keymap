@@ -562,10 +562,10 @@
         Media {
             display-name = "Media";
             bindings = <
-       &kp EXCLAMATION  &none  &none   &none  &kp LEFT_BRACKET    &kp RBKT          &kp C_VOLUME_DOWN  &kp UP_ARROW     &kp C_VOLUME_UP    &kp QUESTION
-       &none            &none  &none   &none  &kp LEFT_BRACE      &kp RIGHT_BRACE   &kp LEFT_ARROW     &kp DOWN_ARROW   &kp RIGHT_ARROW    &kp PAGE_DOWN
-&none  &none            &none  &none   &none  &kp LESS_THAN       &kp GREATER_THAN  &kp LC(LG(LEFT))   &kp LG(D)        &kp LC(LG(RIGHT))  &kp QUESTION   &kp SQT
-                               &trans  &none  &none               &trans            &kp LEFT_ARROW     &kp RIGHT_ARROW
+       &kp EXCLAMATION  &none  &none              &none          &kp LEFT_BRACKET    &kp RBKT          &kp C_VOLUME_DOWN  &kp UP_ARROW     &kp C_VOLUME_UP    &kp QUESTION
+       &none            &none  &kp LS(LC(LG(M)))  &none          &kp LEFT_BRACE      &kp RIGHT_BRACE   &kp LEFT_ARROW     &kp DOWN_ARROW   &kp RIGHT_ARROW    &kp PAGE_DOWN
+&none  &none            &none  &kp LG(LS(C))      &kp LS(LG(V))  &kp LESS_THAN       &kp GREATER_THAN  &kp LC(LG(LEFT))   &kp LG(D)        &kp LC(LG(RIGHT))  &kp QUESTION   &kp SQT
+                               &trans             &none          &none               &trans            &kp LEFT_ARROW     &kp RIGHT_ARROW
             >;
         };
 
