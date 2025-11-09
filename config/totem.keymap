@@ -342,14 +342,14 @@
         };
 
         middle_click {
-            bindings = <&ht_mkp MCLK LS(LC(PAGE_UP))>;
+            bindings = <&ht_mkp MCLK LC(PAGE_UP)>;
             key-positions = <22 23>;
             timeout-ms = <350>;
             layers = <0 3>;
         };
 
         right_click {
-            bindings = <&ht_mkp RCLK LS(LC(PAGE_DOWN))>;
+            bindings = <&ht_mkp RCLK LC(PAGE_DOWN)>;
             key-positions = <23 24>;
             layers = <0 3 4>;
         };
