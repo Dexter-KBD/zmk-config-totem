@@ -155,7 +155,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <240>;
-            quick-tap-ms = <140>;
+            quick-tap-ms = <240>;
         };
 
         MT_hold: MT_hold {
@@ -220,15 +220,16 @@
             bindings = <&kp NUMBER_1>, <&ht_test NUMBER_3 NUMBER_2>;
         };
 
-        LT_tap: LT_tap {
+        LT_retro: LT_retro {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_TAP";
+            label = "LT_RETRO";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <240>;
-            quick-tap-ms = <140>;
-            flavor = "tap-preferred";
+            quick-tap-ms = <240>;
+            flavor = "hold-preferred";
+            retro-tap;
         };
 
         ht_refresh: ht_refresh {
@@ -501,10 +502,10 @@
         Totem {
             display-name = "Totem";
             bindings = <
-                              &kp Q  &kp W         &over_E_ctl  &over_R_f4   &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
-                              &kp A  &over_S_save  &over_D_ctl  &over_F_ctl  &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp B
-&MT_hold RIGHT_SHIFT LG(TAB)  &kp Z  &kp X         &kp C        &kp V        &kp B               &kp N            &kp M         &kp COMMA      &kp PERIOD     &lt 8 SLASH  &kp RIGHT_SHIFT
-                                                   &lt 5 TAB    &lt 7 SPACE  &LT_hold 4 ENTER    &lt 6 BACKSPACE  &kp SPACE     &kp RIGHT_ALT
+                              &kp Q  &kp W         &over_E_ctl      &over_R_f4         &kp T               &kp Y            &kp U         &over_I_Up     &kp O          &kp P
+                              &kp A  &over_S_save  &over_D_ctl      &over_F_ctl        &kp G               &kp H            &over_J_Left  &over_K_Down   &over_L_Right  &kp B
+&MT_hold RIGHT_SHIFT LG(TAB)  &kp Z  &kp X         &kp C            &kp V              &kp B               &kp N            &kp M         &kp COMMA      &kp PERIOD     &lt 8 SLASH  &kp RIGHT_SHIFT
+                                                   &LT_retro 5 TAB  &LT_retro 7 SPACE  &LT_hold 4 ENTER    &lt 6 BACKSPACE  &kp SPACE     &kp RIGHT_ALT
             >;
         };
 
