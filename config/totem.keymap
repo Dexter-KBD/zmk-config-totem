@@ -31,7 +31,7 @@
 &lt {
     tapping-term-ms = <240>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <240>;
 };
 
 / {
