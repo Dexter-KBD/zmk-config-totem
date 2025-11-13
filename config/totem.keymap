@@ -455,6 +455,7 @@
         R_bracket {
             bindings = <&kp RBKT>;
             key-positions = <5 6>;
+            layers = <0>;
         };
 
         all {
