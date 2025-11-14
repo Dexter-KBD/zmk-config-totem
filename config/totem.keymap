@@ -365,14 +365,14 @@
         six {
             bindings = <&kp CARET>;
             key-positions = <6 7>;
-            layers = <0 4 3>;
+            layers = <0 3>;
             require-prior-idle-ms = <100>;
         };
 
         seven {
             bindings = <&kp AMPERSAND>;
             key-positions = <8 7>;
-            layers = <0 4 3>;
+            layers = <0 3>;
         };
 
         two {
