@@ -18,8 +18,5 @@
         rows = <0>;
         events = <0>;
     };
-    bluetooth {
-        conn-sup-to = <20>;
-    };
 };
 
