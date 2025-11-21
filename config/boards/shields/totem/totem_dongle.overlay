@@ -19,3 +19,7 @@
         events = <0>;
     };
 };
+
+&bt {
+    conn-sup-to = <20>;  // 20 * 10ms = 200ms (0.2초)로 supervision timeout 줄임. 재연결 초고속!
+};
