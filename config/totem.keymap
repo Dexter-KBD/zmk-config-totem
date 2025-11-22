@@ -470,9 +470,14 @@
             layers = <0 4>;
         };
 
-        plus {
-            bindings = <&kp PLUS>;
+        minus {
+            bindings = <&kp MINUS>;
             key-positions = <25 24>;
+        };
+
+        test {
+            bindings = <&mo 3>;
+            key-positions = <35 31>;
         };
     };
 
