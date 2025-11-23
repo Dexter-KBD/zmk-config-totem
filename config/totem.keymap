@@ -474,11 +474,6 @@
             bindings = <&kp MINUS>;
             key-positions = <25 24>;
         };
-
-        test {
-            bindings = <&mo 3>;
-            key-positions = <35 31>;
-        };
     };
 
     macros {
