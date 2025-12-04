@@ -358,7 +358,7 @@
         five {
             bindings = <&kp PERCENT>;
             key-positions = <6 15>;
-            layers = <0 4 3>;
+            layers = <0 3>;
             require-prior-idle-ms = <100>;
         };
 
@@ -406,7 +406,7 @@
         Macro_brackets {
             bindings = <&kp RPAR>;
             key-positions = <15 16>;
-            layers = <0 3 4>;
+            layers = <0 3>;
             timeout-ms = <350>;
         };
 
@@ -467,7 +467,7 @@
         underbar {
             bindings = <&kp UNDERSCORE>;
             key-positions = <26 27>;
-            layers = <0 4>;
+            layers = <0>;
         };
 
         minus {
