@@ -22,7 +22,7 @@ include:
       -DCONFIG_ZMK_LOGGING_MINIMAL=y
       -DCONFIG_ZMK_LOG_LEVEL_INF=y
       -DCONFIG_LV_USE_LOG=y
-      -DCONFIG_LV_Z_LOG_LEVEL=3
+      -DCONFIG_LV_LOG_LEVEL_INFO=y
       -DCONFIG_LOG_BUFFER_SIZE=2048
     artifact-name: totem-dongle-yads
 
