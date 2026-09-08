@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-dongle-screen
       remote: dexterkbd
-      revision: 9b057f48cee951cb74475f655e6665ff6d65362d
+      revision: 3f4b5297083c0537021c4966a9fc169d48fdcc64
   self:
     path: config
