@@ -14,11 +14,16 @@ include:
   # 🔹 동글 + YADS 화면 버전 (USB + Screen)
   - board: xiao_ble//zmk
     shield: totem_dongle dongle_screen
-    snippet: studio-rpc-usb-uart
+    snippet: studio-rpc-usb-uart zmk-usb-logging
     cmake-args: >
       -DCONFIG_PM=n
       -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=0
       -DCONFIG_ZMK_STUDIO=y
+      -DCONFIG_ZMK_LOGGING_MINIMAL=y
+      -DCONFIG_ZMK_LOG_LEVEL_INF=y
+      -DCONFIG_LV_USE_LOG=y
+      -DCONFIG_LV_Z_LOG_LEVEL=3
+      -DCONFIG_LOG_BUFFER_SIZE=2048
     artifact-name: totem-dongle-yads
 
   # 🔹 설정 초기화용 빌드
