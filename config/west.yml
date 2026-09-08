@@ -7,10 +7,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: 641514a97db345f499dd50b0360e594270f008fe
       import: app/west.yml
     - name: zmk-dongle-screen
       remote: dexterkbd
-      revision: main
+      revision: 43b88909fdf5c54aad69779128d5532cf12d3127
   self:
     path: config

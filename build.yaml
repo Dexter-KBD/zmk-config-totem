@@ -1,27 +1,27 @@
 include:
   # 🔹 좌측(Left) 빌드 - 슬레이브
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: totem-dongle-left
 
   # 🔹 우측(Right) 빌드 - 슬레이브
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: totem-dongle-right
 
   # 🔹 동글 + YADS 화면 버전 (USB + Screen)
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_dongle dongle_screen
+    snippet: studio-rpc-usb-uart
     cmake-args: >
       -DCONFIG_PM=n
-      -DCONFIG_PM_DEVICE=n
       -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=0
       -DCONFIG_ZMK_STUDIO=y
     artifact-name: totem-dongle-yads
 
   # 🔹 설정 초기화용 빌드
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
     artifact-name: totem-settings-reset
